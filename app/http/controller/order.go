@@ -2,8 +2,8 @@ package controller
 
 import (
 	"github.com/kataras/iris/v12"
-	"iris-app/app/http/response"
-	"iris-app/app/service/order"
+	"order/app/http/response"
+	"order/app/service/order"
 )
 
 type orderController struct{}

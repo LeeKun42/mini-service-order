@@ -3,9 +3,9 @@ package order
 import (
 	"github.com/kataras/iris/v12/x/errors"
 	"gorm.io/gorm"
-	"iris-app/app/model"
-	"iris-app/app/model/dto"
-	"iris-app/app/rpc/client"
+	"order/app/model"
+	"order/app/model/dto"
+	"order/app/rpc/client"
 )
 
 type orderService struct{}

@@ -5,9 +5,9 @@ import (
 	"github.com/spf13/cobra"
 	"gorm.io/gen"
 	"gorm.io/gorm"
-	"iris-app/app/http"
-	"iris-app/app/lib/config"
-	"iris-app/app/model"
+	"order/app/http"
+	"order/app/lib/config"
+	"order/app/model"
 	"os"
 )
 

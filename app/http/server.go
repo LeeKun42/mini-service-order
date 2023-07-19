@@ -7,12 +7,12 @@ import (
 	"github.com/kataras/iris/v12/middleware/cors"
 	recover2 "github.com/kataras/iris/v12/middleware/recover"
 	"github.com/spf13/viper"
-	"iris-app/app/http/controller"
-	"iris-app/app/http/middleware"
-	"iris-app/app/lib/log"
 	"net"
 	"net/rpc"
 	"net/rpc/jsonrpc"
+	"order/app/http/controller"
+	"order/app/http/middleware"
+	"order/app/lib/log"
 	"time"
 )
 

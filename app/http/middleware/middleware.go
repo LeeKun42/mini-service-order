@@ -3,7 +3,7 @@ package middleware
 import (
 	"errors"
 	"github.com/kataras/iris/v12"
-	"iris-app/app/rpc/client"
+	"order/app/rpc/client"
 	"strings"
 )
 

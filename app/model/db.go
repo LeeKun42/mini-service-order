@@ -7,7 +7,7 @@ import (
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"iris-app/app/lib/log"
+	"order/app/lib/log"
 	"time"
 )
 

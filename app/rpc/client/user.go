@@ -2,10 +2,10 @@ package client
 
 import (
 	"fmt"
-	"iris-app/app/lib/nacos"
-	"iris-app/app/model/dto"
 	"net/rpc"
 	"net/rpc/jsonrpc"
+	"order/app/lib/nacos"
+	"order/app/model/dto"
 )
 
 const UserServiceName = "user"

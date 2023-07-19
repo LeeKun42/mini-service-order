@@ -1,4 +1,4 @@
-module iris-app
+module order
 
 go 1.19
 
