@@ -38,7 +38,8 @@ func StartWebServer() {
 	/** restful风格路由 */
 	app.PartyFunc("/api", func(api iris.Party) {
 		api.PartyFunc("/orders", func(users iris.Party) {
-			users.Get("/{id:int}", controller.UserController.Info).Use(middleware.JwtAuthCheck)
+			orderService := controller.NewOrderController()
+			users.Get("/{id:int}", orderService.Info).Use(middleware.JwtAuthCheck)
 		})
 	})
 

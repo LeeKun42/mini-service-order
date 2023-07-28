@@ -3,23 +3,26 @@ package order
 import (
 	"github.com/kataras/iris/v12/x/errors"
 	"gorm.io/gorm"
-	"order/app/model"
 	"order/app/model/dto"
 	"order/app/rpc/client"
 )
 
-type orderService struct{}
+type Service struct {
+	DB *gorm.DB
+}
 
-var Service = orderService{}
+func NewService() *Service {
+	return &Service{}
+}
 
 const (
 	StatusNew int = 0
 	StatusEnd int = 10
 )
 
-func (us *orderService) Get(id int) (dto.Order, error) {
+func (service *Service) Get(id int) (dto.Order, error) {
 	var order dto.Order
-	result := model.Instance().Find(&order, id)
+	result := service.DB.Find(&order, id)
 	if result.Error != nil && errors.Is(result.Error, gorm.ErrRecordNotFound) {
 		return order, errors.New("订单不存在")
 	}
